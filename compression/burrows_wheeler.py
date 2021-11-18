@@ -170,6 +170,7 @@ if __name__ == "__main__":
         f"in '{result['bwt_string']}'"
     )
     original_string = reverse_bwt(result["bwt_string"], result["idx_original_string"])
+    print("bubble sorint for cherry picke")
     print(
         f"Reversing Burrows Wheeler transform for entry '{result['bwt_string']}' "
         f"we get original string '{original_string}'"
