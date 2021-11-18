@@ -26,6 +26,7 @@ def parse_file(file_path: str) -> list[Letter]:
     frequencies, then convert the dict into a list of Letters.
     """
     chars: dict[str, int] = {}
+    print("hello parse file")
     with open(file_path) as f:
         while True:
             c = f.read(1)
@@ -42,6 +43,7 @@ def build_tree(letters: list[Letter]) -> Letter | TreeNode:
     """
     response: list[Letter | TreeNode] = letters  # type: ignore
     while len(response) > 1:
+        print("hello parse file2 ")
         left = response.pop(0)
         right = response.pop(0)
         total_freq = left.freq + right.freq
