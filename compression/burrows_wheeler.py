@@ -86,6 +86,7 @@ def bwt_transform(s: str) -> BWTTransformDict:
         "bwt_string": "".join([word[-1] for word in rotations]),
         "idx_original_string": rotations.index(s),
     }
+    print("hellowsds")
     return response
 
 
