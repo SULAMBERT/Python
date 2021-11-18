@@ -16,6 +16,7 @@ def read_file_binary(file_path: str) -> str:
     try:
         with open(file_path, "rb") as binary_file:
             data = binary_file.read()
+            print("hello lampe_ziv")
         for dat in data:
             curr_byte = f"{dat:08b}"
             result += curr_byte
@@ -32,6 +33,7 @@ def add_key_to_lexicon(
     Adds new strings (curr_string + "0",  curr_string + "1") to the lexicon
     """
     lexicon.pop(curr_string)
+    print("hello lampe_ziv2")
     lexicon[curr_string + "0"] = last_match_id
 
     if math.log2(index).is_integer():
